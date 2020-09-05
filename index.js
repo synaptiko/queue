@@ -1,10 +1,7 @@
-var inherits = require('inherits')
-var EventEmitter = require('events').EventEmitter
+import { inherits } from 'util'
+import { EventEmitter } from 'events'
 
-module.exports = Queue
-module.exports.default = Queue
-
-function Queue (options) {
+export function Queue (options) {
   if (!(this instanceof Queue)) {
     return new Queue(options)
   }

@@ -155,9 +155,7 @@ interface QueueConstructor {
     new (options?: Options): Queue;
 }
 
-declare const Queue: QueueConstructor;
-
-export default Queue;
+export declare const Queue: QueueConstructor;
 
 export interface QueueWorker {
     (callback?: QueueWorkerCallback): void;
